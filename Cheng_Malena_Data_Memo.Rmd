@@ -1,0 +1,54 @@
+---
+title: "Final Project Data Memo"
+author: "Emily Wang, Gianna Chan, Malena Cheng"
+date: "4/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### **Proposed Project Timeline**
+
+1.  Load data into R after we get approval after the data memo
+
+2.  Before April 14: Data quality check
+
+3.  April 14-21: Start EDA 
+
+4.  April 21: Hand in EDA update
+
+5.  Early May: Feature engineering
+
+6.  Early May: Discuss modelling
+
+7.  Early May: Data splitting & resampling (might also sample dataset for EDA)
+
+8.  Mid May: Tuning & resampling
+
+9.  End of May: Model assessment
+
+10. June: Write final report & executive summary
+
+ 
+
+### **Overview of Dataset**
+
+We are using the [Mushroom Classification dataset](https://www.kaggle.com/uciml/mushroom-classification) from Kaggle, which documents characteristics of 23 species of gilled mushrooms in the Agaricus and Lepiota Mushroom Family. It includes attributes related to the mushrooms' caps, gills, stalks, veils, and rings, as well as general information about each mushrooms' habitat, odor, and whether or not it is poisonous. This dataset was originally donated to the UCI Machine Learning Repository as adapted from The Audubon Society Field Guide to North American Mushrooms (1981).
+
+We plan to collect the dataset through a simple download off of Kaggle. The dataset has 8124 observations and 23 variables, so we may be able to reserve a portion of the dataset for EDA, then split on the remaining  data.  We will be dealing with 23 total predictors, which include 21 string variables and 2 Boolean. The string variables are mainly single-letter abbreviations like "b" to represent "bell shape". There is no observed missingness in the dataset, and we will not need to join two or more sources of data together.
+
+### **Potential research questions**
+
+Our potential research questions will be predictive, which we will answer with a classification-based approach. Going through the data set, we ask: How can one tell if a mushroom is poisonous? Are there certain physical factors that play into it?
+
+We're interested in predicting whether a mushroom species is poisonous or not. We're also interested in predicting what specific attributes can tell us whether a mushroom species is poisonous. Our response variable 'class' has 2 classes, edible and poisonous. Potentially useful variables include odor, ring attributes, and each mushroom part's color.  
+
+ 
+
+### **Potential difficulties**
+
+[Is the data collection mechanism complicated? Is there significant missingness in the data?]{.ul}
+
+Luckily there shouldn't be many potential difficulties, as there are enough observations & no observable missingness. We may need to rename the factors to replace the abbreviations with the full name so it is more intuitive for us to work with, and refer to it in a codebook. Other potential difficulties might include processing time given amount of data (8k rows and 23 columns), and working with mostly categorical variables, which might lead to a large number of dummy variables.
