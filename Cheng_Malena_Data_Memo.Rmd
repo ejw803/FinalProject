@@ -51,4 +51,6 @@ We're interested in predicting whether a mushroom species is poisonous or not. W
 
 [Is the data collection mechanism complicated? Is there significant missingness in the data?]{.ul}
 
-Luckily there shouldn't be many potential difficulties, as there are enough observations & no observable missingness. We may need to rename the factors to replace the abbreviations with the full name so it is more intuitive for us to work with, and refer to it in a codebook. Other potential difficulties might include processing time given amount of data (8k rows and 23 columns), and working with mostly categorical variables, which might lead to a large number of dummy variables.
+Luckily there shouldn't be many potential difficulties, as there are enough observations & no observable missingness. We may need to rename the factors to replace the abbreviations with the full name so it is more intuitive for us to work with, and refer to it in a codebook.
+
+Other potential difficulties might include processing time given amount of data (8k rows and 23 columns), and working with mostly categorical variables, which might lead to a large number of dummy variables.
